@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Set the viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gen Z for BLM</title>
+    <!-- Linking the main CSS file -->
+  <link href="./css/main.css" rel="stylesheet" />
+  <!-- Preconnect and link to Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Bayon&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid nav-bar">
+      <div class="logo-container">
+        <!-- Logo linking to the homepage -->
+        <a class="navbar-brand" href="index.html"><img src="images/title.jpeg" alt="title-logo" class="logo logo-main"></a>
+      </div>
+
+      <!-- Toggle button for responsive navigation -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-white " aria-current="page" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="classes.html">Classes Offered</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="scholarships.html">Scholarships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="donation.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Us section -->
+  <section class="contactusmain  container-fluid">
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <p>Questions, comments, or requests? Feel free to reach out; we'd love to hear from you.</p>
+
+      <div class="contact-box">
+        <div class="row d-flex">
+          <div class="col-lg-8 col-12">
+            <div class="contact-left">
+              <!-- Contact form -->
+              <form>
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Name">
+                  </div>
+                  <div class="input-group">
+                    <label>Phone</label>
+                    <input type="text" placeholder="Your Number">
+                  </div>
+                </div>
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Email</label>
+                    <input type="text" placeholder="Your Email">
+                  </div>
+                  <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <label>Message</label>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button class="send-button">SEND</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="contact-right">
+              <h3>Reach us</h3>
+              <ul>
+                <li><strong>Email:</strong> Genzforblm@gmail.com</li>
+                <li><strong>Phone:</strong> 919-726-6630</li>
+              </ul>
+              <!-- Instagram link -->
+              <a href="https://www.instagram.com/genzforblm2023/">
+                <div class="d-flex col-6 my-5">
+                  <img src="images/instagram-1.jpeg" class="img-fluid mx-3" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="container-fluid theme-bg">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="col-12 align-items-center">
+        <p class="text-center text-white mt-1">Gen Z for BLM | Copyright 2023 | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- Bootstrap JavaScript -->
+<script src="./js/bootstrap.js"></script>
+
+</html>

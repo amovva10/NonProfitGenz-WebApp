@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Set the viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title and CSS styling links -->
+  <title>Gen Z for BLM</title>
+  <link href="./css/main.css" rel="stylesheet" />
+  <!-- Preconnect and link to Google Fonts for 'Kanit' and 'Alegreya Sans SC & Bayon' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Bayon&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- Additional styles -->
+  <style>
+    /* Highlight class for special emphasis */
+    .highlight {
+      background-color: #e68b15 !important;
+      color: white !important;
+    }
+
+    /* Styling for the 'thismonth-section' */
+    .thismonth-section {
+      background-color: rgb(235, 202, 111); /* Dark Pink Background */
+      padding: 20px;
+      color: rgb(83, 9, 9);
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* Styling for the 'awareness-heading' */
+    .awareness-heading {
+      color: rgb(131, 96, 0);
+      font-weight: bold;
+      padding: 0;
+    }
+
+    /* Styling for the 'awareness' list */
+    .awareness {
+      list-style: none; /* Remove bullets */
+      padding: 0;
+      text-align: center; /* Adjust text alignment */
+    }
+
+    /* Styling for 'h1' elements */
+    h1 {
+      color: #804800;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid nav-bar">
+      <div class="logo-container">
+        <!-- Logo linking to the homepage -->
+        <a class="navbar-brand" href="index.html"><img src="images/title.jpeg" alt="title-logo" class="logo logo-main"></a>
+      </div>
+
+      <!-- Toggle button for responsive navigation -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-white " aria-current="page" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="classes.html">Classes Offered</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="scholarships.html">Scholarships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="donation.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scholarships Calendar section -->
+  <section class="container-fluid month">
+    <div class="row justify-content-center">
+      <div class="col-md-6 table-responsive">
+        <table id="calendar" class="table table-bordered table-responsive">
+          <!-- Calendar title -->
+          <h1 style="font-size: 28px; text-align: center; font-family: 'Times New Roman', sans-serif;">UPCOMING SCHOLARSHIPS</h1>
+          <caption id="month" class="text-center" style="color: rgb(51, 43, 5);"></caption>
+          <thead>
+            <!-- Days of the week -->
+            <tr>
+              <th>Sunday</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Calendar content (if applicable) -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- This Month's Awareness section -->
+  <section class="thismonth-section">
+    <!-- Heading for awareness section -->
+    <h2 class="awareness">Help Out This Month</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Awareness content -->
+        <p>November is a month dedicated to helping those in need, especially in preparation for the upcoming holiday season. Let's come together to make a difference in the lives of people struggling with hunger.</p>
+        <p>Here are some ways you can help:</p>
+        <ul class="awareness">
+          <li>Donate to organizations like Feed America, which work tirelessly to fight hunger across the country.</li>
+          <li>Look for local food banks and pantries in your area where you can volunteer or make donations. Your support can make a significant impact on your community.</li>
+        </ul>
+        <!-- Button with link to learn more -->
+        <a href="https://www.feedingamerica.org/need-help-find-food/thanksgiving" style="text-decoration: none;">
+          <button style="border: none; margin-bottom: 15px; background-color: #aa252c; border-radius: 20px; color: white; padding: 10px 20px;">Learn more</button>
+        </a>
+        <!-- Closing statement -->
+        <p>Join us in making a positive impact this month.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript to display the current month -->
+  <script>
+    const monthcap = document.getElementById('month');
+    const months = [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+
+    const currentDatetoday = new Date();
+    const currentMonthIndex = currentDatetoday.getMonth();
+    const currentMonthName = months[currentMonthIndex];
+    monthcap.innerText = currentMonthName;
+  </script>
+
+  <!-- Include calender.js only once -->
+  <script src="./js/calender.js"></script>
+
+  <!-- Footer section -->
+  <footer class="container-fluid theme-bg">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="col-12 align-items-center">
+        <!-- Copyright notice -->
+        <p class="text-center text-white mt-1">Gen Z for BLM | Copyright 2023 | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

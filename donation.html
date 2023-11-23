@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Set the viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gen Z for BLM</title>
+
+  <!-- Link to main stylesheet -->
+  <link href="./css/main.css" rel="stylesheet" />
+
+  <!-- Preconnect and link to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Bayon&display=swap" rel="stylesheet">
+
+  <!-- Link to Bootstrap stylesheet -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+  <style>
+    /* Set color for blue text */
+    .blue-text {
+      color: #2f5d92;
+    }
+
+    /* Highlight style for certain elements */
+    .highlight {
+      background-color: #465870 !important;
+      color: white !important;
+    }
+
+    /* Body styling */
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid nav-bar">
+      <!-- Logo container -->
+      <div class="logo-container">
+        <!-- Link to homepage with logo -->
+        <a class="navbar-brand" href="index.html"><img src="images/title.jpeg" alt="title-logo" class="logo logo-main"></a>
+      </div>
+
+      <!-- Navbar toggler for responsive design -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav justify-content-center align-items-center">
+          <!-- Navigation links -->
+          <li class="nav-item">
+            <a class="nav-link text-white " aria-current="page" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./classes.html">Classes Offered</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="scholarships.html">Scholarships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="donation.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section for displaying contributing organizations -->
+  <div class="row d-flex justify-content-center">
+    <div class="col-9">
+      <div class="text-center display-6 blue-text">
+        ORGANIZATIONS WE ARE CONTRIBUTING TO:
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel for displaying organization names -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!-- Carousel items for each organization -->
+      <div class="carousel-item active p-5">
+        <h1 class="text-center">NDN Collective Covid-19 Response Project</h1>
+      </div>
+      <div class="carousel-item p-5">
+        <h1 class="text-center">Color of Change</h1>
+      </div>
+      <div class="carousel-item p-5">
+        <h1 class="text-center">Feeding America</h1>
+      </div>
+      <div class="carousel-item p-5">
+        <h1 class="text-center">Okra Project</h1>
+      </div>
+      <div class="carousel-item p-5">
+        <h1 class="text-center">Legal Defense Fund</h1>
+      </div>
+    </div>
+    <!-- Carousel navigation controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Additional content section after the footer -->
+  <section class="additional-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Learn more about organizations and make a difference!</h2>
+          <!-- List of Organizations -->
+          <ul class="organization-list">
+            <!-- Information about each organization with a Learn More link -->
+            <li>
+              <h3>NDN Collective Covid-19 Response Project</h3>
+              <p>"The NDN Collective has started a COVID-19 Response Project, designed to provide immediate relief to some of the most underserved communities in the country. Their intent is to quickly distribute resources to frontline organizations, tribes and individuals who are providing essential services to Indigenous communities within the next 15-45 days to provide gap resources during this health crisis."</p>
+              <a href="https://www.nicoa.org/the-ndn-covid-19-response-project/" class="btn btn-primary learn-more-button" role="button">Learn More</a>
+            </li>
+            <li>
+              <h3>Color of Change</h3>
+              <p>We help people respond effectively to injustice in the world around us. As a national online force driven by 7 million members, we move decision-makers in corporations and government to create a more human and less hostile world for Black people in America."</p>
+              <a href="https://www.nicoa.org/the-ndn-covid-19-response-project/" class="btn btn-primary learn-more-button" role="button">Learn More</a>
+            <li>
+              <h3>Feeding America</h3>
+              <p>"Feeding America is the largest charity working to end hunger in the United States. We partner with food banks, food pantries, and local food programs to bring food to people facing hunger. We advocate for policies that create long-term solutions to hunger."</p>
+              <a href="https://www.nicoa.org/the-ndn-covid-19-response-project/" class="btn btn-primary learn-more-button" role="button">Learn More</a>
+            </li>
+            <li>
+              <h3>Okra Project</h3>
+              <p>"The okra plant has a rich history in the African diaspora, with our ancestors bringing it with them during the Middle Passage to sustain themselves and plant in the new world."</p>
+              <a href="https://www.nicoa.org/the-ndn-covid-19-response-project/" class="btn btn-primary learn-more-button" role="button">Learn More</a>
+            </li>
+            <li>
+              <h3>Legal Defense Fund</h3>
+              <p>"The Legal Defense Fund (LDF) is America’s premier legal organization fighting for racial justice. Using the power of law, narrative, research, and people, we defend and advance the full dignity and citizenship of Black people in America."</p>
+              <a href="https://www.nicoa.org/the-ndn-covid-19-response-project/" class="btn btn-primary learn-more-button" role="button">Learn More</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation section with a call-to-action button -->
+  <div class="container-fluid p-5 donationcolor">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="text-white text-center">
+            If you're interested in making a donation, click here! (All proceeds go to the organizations listed above)
+          </h5>
+          <div class="d-flex justify-content-center">
+            <a href="https://www.paypal.com/donate/?cmd=_donations&business=genzforblm@gmail.com&item_name=Gen%20Z%20for%20BLM&currency_code=USD" class="donate mt-5">Donate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section with copyright information -->
+  <footer class="container-fluid theme-bg">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="col-12 align-items-center">
+        <p class="text-center text-white mt-1">Gen Z for BLM | Copyright 2023 | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<!-- Include Bootstrap JavaScript -->
+<script src="./js/bootstrap.js"></script>
+</html>

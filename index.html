@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta tags for better responsive behavior -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gen Z for BLM</title>
+  <!-- Linking the main CSS file -->
+  <link href="./css/main.css" rel="stylesheet" />
+  <!-- Preconnecting to Google Fonts for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Bayon&display=swap" rel="stylesheet">
+ 
+  <!-- Linking Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+  <style>
+    .highlight {
+      background-color: #465870 !important;
+      color: white !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid nav-bar">
+      <div class="logo-container">
+        <!-- Logo linking to home page -->
+        <a class="navbar-brand" href="index.html"><img src="images/title.jpeg" alt="title-logo" class="logo logo-main"></a>
+      </div>
+
+      <!-- Navbar toggle button for small screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-white " aria-current="page" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./classes.html">Classes Offered</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="scholarships.html">Scholarships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="donation.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main section with an image and text -->
+  <section class="container-fluid bg-black p-5 vh-20 d-flex">
+    <div class="mainpage">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-lg-6"><img src="images/genzim.jpeg" alt="Image" class="banner-img"></div>
+        <div class="col-lg-6 col-12">
+          <div class="text">
+            <!-- Mission statement and call-to-action buttons -->
+            <p>Our mission as a youth-led organization is dedicated to shining a spotlight on pressing human rights issues
+              that affect our society today. We achieve this by offering tutoring and mentoring services and actively
+              collecting donations, all of which are channeled towards crucial causes. In particular, we stand in
+              solidarity with organizations advocating for the Black Lives Matter movement, support nonprofits that are
+              addressing the profound impacts of COVID-19 in hard-hit areas, and collaborate with charitable clinics to
+              ensure healthcare access for uninsured and underinsured individuals in communities across the nation.</p>
+            <button class="button-link"><a href="aboutus.html">Learn more</a></button>
+            <button class="button-link"><a href="donation.html">Donate</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics section with earned money and hours spent -->
+  <div class="container-fluid p-5 colormain">
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="border-box">
+            <div class="row d-flex justify-content-between">
+              <div class="col-6">
+                <!-- Hours spent section -->
+                <h1 class="text-white text-center display-7 mb-3 mt-0">Hours Spent</h1>
+                <div id="hours" class="text-center text-white h1 mt-1">0</div>
+                <h1 class="text-center text-white display-7 mt-1">On tutoring</h1>
+              </div>
+              <div class="col-6">
+                <!-- Earned money section -->
+                <h1 class="text-white text-center display-7 mb-3 mt-0">Earned</h1>
+                <div id="earned" class="text-center text-white h1 mt-1">$0+</div>
+                <h1 class="text-center text-white display-7 mt-1">Through tutoring</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer class="container-fluid theme-bg">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="col-12 align-items-center">
+        <p class="text-center text-white mt-1">Gen Z for BLM | Copyright 2023 | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<!-- Bootstrap JavaScript file -->
+<script src="./js/bootstrap.js"></script>
+
+<!-- JavaScript for animating values -->
+<script>
+  function animateValue(obj, start, end, duration, currencySymbol = "") {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      const value = Math.floor(progress * (end - start) + start);
+
+      // Conditionally add the currency symbol if the value is greater than 0
+      obj.innerHTML = value > 0 ? currencySymbol + value : value;
+
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  // Animate values for earned money and hours spent
+  const earnedObj = document.getElementById("earned");
+  animateValue(earnedObj, 0, 4185, 7000, "$"); // Start from 0 and end at 4185 in 7 seconds with "$" prefix
+
+  const hoursObj = document.getElementById("hours");
+  animateValue(hoursObj, 0, 255, 7000); // Start from 0 and end at 255 in 7 seconds without "$" prefix for hours
+</script>
+
+</html>
