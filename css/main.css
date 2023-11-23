@@ -1,1 +1,605 @@
+/* Reset default margin, padding, and set font for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
 
+/* Define a class for the border box */
+.border-box {
+  border: 2px solid #1c6461; 
+  padding: 20px; 
+}
+
+/* Define styles for specific sections */
+.colormain {
+  background-color: #000000;
+}
+
+.donationcolor {
+  background-color: rgb(147, 181, 212);
+}
+
+.donate {
+  background-color: white;
+  border-radius: 5px;
+  color: #000000;
+  padding: 10px;
+  border: none;
+}
+
+.maintabs {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  min-height: 100vh;
+}
+
+.maintabs img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/* Styles for navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(12, 68, 68);
+}
+
+.nav-link:hover {
+  background-color: rgb(75, 170, 167);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Styles for the main page section */
+.mainpage {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.mainpage img {
+  max-width: 60%;
+  max-height: 50%;
+}
+
+.text {
+  flex: 1;
+  padding: 10px 40px 20px 60px;
+  font-size: 20px;
+  color: white;
+}
+
+/* Styles for buttons */
+.button-link {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 5px;
+  background-color: #4bacaa;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.6s ease;
+}
+
+.button-link a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background-color: #2f7c79;
+}
+
+/* Styles for the month section with background image */
+.month {
+  background-color: rgb(190, 105, 56);
+  background-image: url(../images/turkeys.PNG);
+  background-size: cover;
+  padding: 50px 0;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+/* Styles for the table */
+table {
+  background-size: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 0.95em;
+  width: 13.15%;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+td {
+  font-size: 1.9em;
+  width: 13.15%;
+  border: 1px solid black;
+  padding: 10px 20px 50px 10px;
+  text-align: left;
+  vertical-align: top;
+  color: black;
+  background-color: rgba(255, 255, 255);
+}
+
+caption {
+  text-align: center;
+  caption-side: top;
+  color: black;
+  letter-spacing: 4.5px;
+  font-weight: bold;
+  font-size: 3.2em;
+  padding: 10px 0 40px;
+}
+
+thead,
+th {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* Styles for the about us section */
+.aboutusmain {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  min-height: 30vh;
+  background-color: rgb(7, 43, 65);
+}
+
+.aboutusmain img {
+  max-width: 40%;
+  max-height: 60%;
+}
+
+/* Styles for the about section with background image */
+.aboutsection {
+  background: url(../images/covidblm.jpg);
+  background-size: cover;
+  background-color: #dcf2ff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innercont {
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  border-radius: 9px;
+  background-color: white;
+  padding: 80px;
+  text-align: center;
+}
+
+.innercont h1 {
+  margin-bottom: 90px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.textsec {
+  font-size: 17px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Styles for the team section */
+.mainteam {
+  background-color: #1c3a57;
+  box-sizing: border-box;
+}
+
+.mainteam h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 52px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .member {
+  background: #b9c3df;
+  margin: 20px;
+  margin-bottom: 50px;
+  width: 400px;
+  padding: 20px;
+  line-height: 20px;
+  color: #000000;
+  position: relative;
+  border-radius: 8px;
+}
+
+.team .member h3 {
+  color: #5a726f;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .member p.position {
+  color: #ffffff;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .member .teamimg {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .member .teamimg img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+/* Styles for the contact us section */
+.contactusmain {
+  display: flex;
+  min-height: 100vh;
+  background-color: rgb(147, 192, 209);
+}
+
+.contactusmain img {
+  max-width: 40%;
+  max-height: 60%;
+}
+
+.contact {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.contact-box {
+  background: #fff;
+  display: flex;
+}
+
+.contact-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+.contact-right {
+  padding: 40px;
+  background: #2d4a57;
+  color: #fff;
+  height: 100%;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 40px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-row .input-group {
+  flex-basis: 45%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 6px;
+  display: block;
+  color: #000000;
+}
+
+.send-button {
+  background: #2d4a57;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.contact-left h3 {
+  color: black;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-right ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.contact-right li {
+  margin-bottom: 15px;
+}
+
+.contact-right li strong {
+  font-weight: bold;
+}
+
+.contact-right h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the scholarships section */
+.scholarshipsmain {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  min-height: 100vh;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styles for the navigation bar */
+.logo {
+  font-size: xx-large;
+}
+
+.logo-container {
+  width: 35%;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.link-nav {
+  width: fit-content;
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  font-weight: 550;
+}
+
+.logo-main {
+  width: 147px;
+}
+
+.links-main {
+  padding-top: 10px;
+}
+
+.container-bar {
+  padding: 0px;
+}
+
+.maintab-container {
+  padding-top: 10px;
+}
+
+/* Highlight class for background color */
+.highlight {
+  background-color: yellow;
+}
+
+/* Remove default text decoration for links */
+a {
+  text-decoration: none !important;
+}
+
+/* Theme colors */
+.theme-color {
+  color: #0C4444;
+}
+
+.theme-bg {
+  background-color: #0C4444;
+}
+
+/* Button with offer style */
+.offer-btn {
+  padding: 10px;
+  color: white;
+  background-color: #0C4444;
+  border-radius: 8px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 992px) {
+  /* Adjust background image styles for smaller screens */
+  .aboutsection {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Styles for the contact box on smaller screens */
+  .contact-box {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Styles for contact right section on smaller screens */
+  .contact-right ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .contact-right li {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .contact-right li strong {
+    font-weight: bold;
+  }
+
+  .contact-right h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Additional content section for smaller screens */
+  .additional-content {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+  }
+
+  /* Organization list styles for smaller screens */
+  .organization-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .organization-list li {
+    margin-bottom: 20px;
+  }
+
+  .organization-list h3 {
+    font-size: 24px;
+    color: #164f91;
+  }
+
+  .organization-list p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  /* Learn more button styles for smaller screens */
+  .learn-more-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #5182b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  /* Style for button hover state on smaller screens */
+  .learn-more-button:hover {
+    background-color: #0c3a68;
+  }
+
+  /* Margin and padding adjustments for h2 and h3 on smaller screens */
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .organization-list h3 {
+    font-size: 24px;
+    color: #164f91;
+    margin-top: 20px;
+  }
+
+  /* Margin adjustment for carousel on smaller screens */
+  #carouselExample {
+    margin-top: 10px;
+  }
+
+  /* Margin adjustment for blue-text on smaller screens */
+  .blue-text {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust background image styles for smaller screens */
+  .aboutsection {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Padding adjustment for month section on smaller screens */
+  .month {
+    padding: 30px;
+  }
+
+  /* Styles for the inner content on smaller screens */
+  .innercont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  /* Padding adjustment for month section on smaller screens */
+  .month {
+    padding: 10px;
+    margin: 0%;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  /* Styles for the inner content on smaller screens */
+  .innercont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
