@@ -4,6 +4,7 @@ Connecting with the community online through the GenZ For BLM web application. T
 
 ## Website
 Visit the GenZForBLM website:(https://genzforblm.com)
+Instagram: https://www.instagram.com/genzforblm2024/
 
 ## Technologies Used
 - HTML
